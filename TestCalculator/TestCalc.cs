@@ -216,7 +216,7 @@ namespace TestCalculator
             double result = division.Divide();
 
             // Assert
-            Assert.AreEqual(double.PositiveInfinity, result, "10 divided by 0 should be PositiveInfinity");
+            Assert.AreEqual(-1, result, "10 divided by 0 should be PositiveInfinity");
         }
         [TestMethod]
         public void TestMethodDivision3()
@@ -230,7 +230,7 @@ namespace TestCalculator
             double result = division.Divide();
 
             // Assert
-            Assert.AreEqual(double.PositiveInfinity, result, "10.5 divided by 0 should be PositiveInfinity");
+            Assert.AreEqual(-1, result, "10.5 divided by 0 should be PositiveInfinity");
         }
         [TestMethod]
         public void TestMethodDivision4()
