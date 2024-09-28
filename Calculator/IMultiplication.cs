@@ -8,6 +8,6 @@ namespace Calculator
 {
     public interface IMultiplication
     {
-        double Multiply(double operand1, double operand2);
+        double Multiply();
     }
 }

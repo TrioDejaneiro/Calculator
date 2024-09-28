@@ -29,12 +29,6 @@ namespace Calculator
             B = b;
         }
 
-        // Реализация метода Subtract из интерфейса ISubtraction
-        public double Subtract(double operand1, double operand2)
-        {
-            return operand1 - operand2;
-        }
-
         // Метод без параметров использует внутренние переменные A и B
         public double Subtract()
         {

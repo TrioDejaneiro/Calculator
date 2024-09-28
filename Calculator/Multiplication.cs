@@ -29,12 +29,6 @@ namespace Calculator
             B = b;
         }
 
-        // Реализация метода Multiply из интерфейса IMultiplication
-        public double Multiply(double operand1, double operand2)
-        {
-            return operand1 * operand2;
-        }
-
         // Метод без параметров использует внутренние переменные A и B
         public double Multiply()
         {

@@ -29,22 +29,12 @@ namespace Calculator
             B = b;
         }
 
-        // Реализация метода Divide из интерфейса IDivision
-        public double Divide(double operand1, double operand2)
-        {
-            if (operand2 == 0)
-            {
-                throw new DivideByZeroException("Cannot divide by zero");
-            }
-            return operand1 / operand2;
-        }
-
         // Метод без параметров использует внутренние переменные A и B
         public double Divide()
         {
             if (B == 0)
             {
-                throw new DivideByZeroException("Cannot divide by zero");
+                return -1;
             }
             return A / B;
         }

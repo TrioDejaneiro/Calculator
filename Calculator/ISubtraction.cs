@@ -8,6 +8,6 @@ namespace Calculator
 {
     public interface ISubtraction
     {
-        double Subtract(double operand1, double operand2);
+        double Subtract();
     }
 }

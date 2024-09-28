@@ -40,10 +40,17 @@ namespace Calculator
 
 
             // Получаем первое и второе число
-            firstNumber = double.Parse(expression.Substring(0, operatorIndex).Trim());
-            secondNumber = double.Parse(expression.Substring(operatorIndex + 1).Trim());
+            if (!double.TryParse(expression.Substring(0, operatorIndex).Trim(), out firstNumber))
+            {
+                MessageBox.Show("Некоректний формат першого числа.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox_Text.Text = string.Empty;
+            }
 
-
+            if (!double.TryParse(expression.Substring(operatorIndex + 1).Trim(), out secondNumber))
+            {
+                MessageBox.Show("Некоректний формат другого числа.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox_Text.Text = string.Empty;
+            }
 
             double result = 0;
 
@@ -64,7 +71,12 @@ namespace Calculator
                     break;
                 case "/":
                     Division division = new Division(firstNumber, secondNumber);
-                    result = division.Divide();  // Выполняем деление
+                    if (division.Divide() != -1 && secondNumber != 0)
+                        result = division.Divide();  // Выполняем деление
+                    else
+                    {
+                        MessageBox.Show("Ділення на 0 неможливе", "!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                     break;
             }
             textBox_Text.Text = result.ToString().Replace('.', ',');
