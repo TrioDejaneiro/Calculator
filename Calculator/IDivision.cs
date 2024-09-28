@@ -8,5 +8,6 @@ namespace Calculator
 {
     public interface IDivision
     {
+        double Divide(double operand1, double operand2);
     }
 }

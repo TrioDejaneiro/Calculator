@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox_input = new TextBox();
+            textBox_Text = new TextBox();
             button_7 = new Button();
             button_8 = new Button();
             button_9 = new Button();
@@ -48,13 +48,13 @@
             button_divide = new Button();
             SuspendLayout();
             // 
-            // textBox_input
+            // textBox_Text
             // 
-            textBox_input.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox_input.Location = new Point(12, 12);
-            textBox_input.Name = "textBox_input";
-            textBox_input.Size = new Size(150, 39);
-            textBox_input.TabIndex = 0;
+            textBox_Text.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox_Text.Location = new Point(12, 12);
+            textBox_Text.Name = "textBox_Text";
+            textBox_Text.Size = new Size(150, 39);
+            textBox_Text.TabIndex = 0;
             // 
             // button_7
             // 
@@ -66,6 +66,7 @@
             button_7.TabIndex = 1;
             button_7.Text = "7";
             button_7.UseVisualStyleBackColor = false;
+            button_7.Click += button_9_Click;
             // 
             // button_8
             // 
@@ -77,6 +78,7 @@
             button_8.TabIndex = 2;
             button_8.Text = "8";
             button_8.UseVisualStyleBackColor = false;
+            button_8.Click += button_9_Click;
             // 
             // button_9
             // 
@@ -88,6 +90,7 @@
             button_9.TabIndex = 3;
             button_9.Text = "9";
             button_9.UseVisualStyleBackColor = false;
+            button_9.Click += button_9_Click;
             // 
             // button_add
             // 
@@ -99,6 +102,7 @@
             button_add.TabIndex = 4;
             button_add.Text = "+";
             button_add.UseVisualStyleBackColor = false;
+            button_add.Click += button_add_Click_1;
             // 
             // button_4
             // 
@@ -110,6 +114,7 @@
             button_4.TabIndex = 5;
             button_4.Text = "4";
             button_4.UseVisualStyleBackColor = false;
+            button_4.Click += button_9_Click;
             // 
             // button_5
             // 
@@ -121,6 +126,7 @@
             button_5.TabIndex = 6;
             button_5.Text = "5";
             button_5.UseVisualStyleBackColor = false;
+            button_5.Click += button_9_Click;
             // 
             // button_6
             // 
@@ -132,6 +138,7 @@
             button_6.TabIndex = 7;
             button_6.Text = "6";
             button_6.UseVisualStyleBackColor = false;
+            button_6.Click += button_9_Click;
             // 
             // button_subtract
             // 
@@ -143,6 +150,7 @@
             button_subtract.TabIndex = 8;
             button_subtract.Text = "-";
             button_subtract.UseVisualStyleBackColor = false;
+            button_subtract.Click += button_add_Click_1;
             // 
             // button_equals
             // 
@@ -154,6 +162,7 @@
             button_equals.TabIndex = 9;
             button_equals.Text = "=";
             button_equals.UseVisualStyleBackColor = false;
+            button_equals.Click += button_equals_Click;
             // 
             // button_1
             // 
@@ -165,6 +174,7 @@
             button_1.TabIndex = 10;
             button_1.Text = "1";
             button_1.UseVisualStyleBackColor = false;
+            button_1.Click += button_9_Click;
             // 
             // button_2
             // 
@@ -176,6 +186,7 @@
             button_2.TabIndex = 11;
             button_2.Text = "2";
             button_2.UseVisualStyleBackColor = false;
+            button_2.Click += button_9_Click;
             // 
             // button_3
             // 
@@ -187,6 +198,7 @@
             button_3.TabIndex = 12;
             button_3.Text = "3";
             button_3.UseVisualStyleBackColor = false;
+            button_3.Click += button_9_Click;
             // 
             // button_mult
             // 
@@ -198,6 +210,7 @@
             button_mult.TabIndex = 13;
             button_mult.Text = "*";
             button_mult.UseVisualStyleBackColor = false;
+            button_mult.Click += button_add_Click_1;
             // 
             // button_c
             // 
@@ -209,6 +222,7 @@
             button_c.TabIndex = 14;
             button_c.Text = "C";
             button_c.UseVisualStyleBackColor = false;
+            button_c.Click += button_c_Click;
             // 
             // button_0
             // 
@@ -220,6 +234,7 @@
             button_0.TabIndex = 15;
             button_0.Text = "0";
             button_0.UseVisualStyleBackColor = false;
+            button_0.Click += button_9_Click;
             // 
             // button_coma
             // 
@@ -231,6 +246,7 @@
             button_coma.TabIndex = 16;
             button_coma.Text = ",";
             button_coma.UseVisualStyleBackColor = false;
+            button_coma.Click += button_coma_Click;
             // 
             // button_divide
             // 
@@ -242,6 +258,7 @@
             button_divide.TabIndex = 17;
             button_divide.Text = "/";
             button_divide.UseVisualStyleBackColor = false;
+            button_divide.Click += button_add_Click_1;
             // 
             // Form1
             // 
@@ -265,7 +282,7 @@
             Controls.Add(button_9);
             Controls.Add(button_8);
             Controls.Add(button_7);
-            Controls.Add(textBox_input);
+            Controls.Add(textBox_Text);
             Name = "Form1";
             Text = "Calc";
             ResumeLayout(false);
@@ -274,7 +291,7 @@
 
         #endregion
 
-        private TextBox textBox_input;
+        private TextBox textBox_Text;
         private Button button_7;
         private Button button_8;
         private Button button_9;
