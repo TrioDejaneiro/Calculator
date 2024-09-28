@@ -59,7 +59,7 @@ namespace Calculator
                     result = subtraction.Subtract();  // Выполняем вычитание
                     break;
                 case "*":
-                    Multiplaction multiplication = new Multiplaction(firstNumber, secondNumber);
+                    Multiplication multiplication = new Multiplication(firstNumber, secondNumber);
                     result = multiplication.Multiply();  // Выполняем умножение
                     break;
                 case "/":

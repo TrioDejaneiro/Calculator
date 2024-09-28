@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public class Multiplaction : IMultiplaction
+    public class Multiplication : IMultiplication
     {
         private double a;
         private double b;
@@ -23,7 +23,7 @@ namespace Calculator
             set { b = value; }
         }
 
-        public Multiplaction(double a, double b)
+        public Multiplication(double a, double b)
         {
             A = a;
             B = b;

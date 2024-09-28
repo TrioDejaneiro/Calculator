@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public interface IMultiplaction
+    public interface IMultiplication
     {
         double Multiply(double operand1, double operand2);
     }
